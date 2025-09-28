@@ -30,6 +30,14 @@ yarn dev
 
 Luego abrir http://localhost:5173/ (Vite mostrará la URL exacta en la consola).
 
+## Demo / Deploy
+
+Hay una versión desplegada públicamente disponible en:
+
+https://gestor-de-vehiculos-driv-in.netlify.app/
+
+Usá esa URL para ver una versión en producción del proyecto.
+
 3. (Opcional) Build de producción
 
 ```bash
