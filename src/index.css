@@ -1,0 +1,63 @@
+/* Variables de colores y tipografia */
+:root {
+  --primary-color: #e10600;
+  --secondary-color: #1c1c1c;
+  --accent-color: #ff9500;
+  --text-light: #f5f5f5;
+  --text-dark: #333;
+  --bg-gray: #2a2a2a;
+  --font-main: "Roboto Condensed", sans-serif;
+  --font-accent: "Oswald", sans-serif;
+}
+
+/* Reset movil */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Base mobile-first */
+html {
+  font-size: 14px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-main);
+  background-color: var(--secondary-color);
+  color: var(--text-light);
+  line-height: 1.5;
+  overflow-x: hidden;
+  background-image: radial-gradient(
+      circle at 10% 20%,
+      rgba(225, 6, 0, 0.1) 0%,
+      transparent 20%
+    ),
+    linear-gradient(to bottom, #2a2a2a 0%, #1c1c1c 100%);
+}
+
+/* Tipografia escalable */
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-accent);
+  font-weight: 700;
+  line-height: 1.2;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+h1 {
+  font-size: 2rem;
+}
+h2 {
+  font-size: 1.8rem;
+}
+h3 {
+  font-size: 1.5rem;
+}
+h4 {
+  font-size: 1.2rem;
+}

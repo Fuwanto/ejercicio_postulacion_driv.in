@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/car.svg" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Driv.in — Catálogo interactivo de vehículos</title>
+
+    <!-- Primary SEO -->
+    <meta
+      name="description"
+      content="Explora y filtra un catálogo interactivo de vehículos. Ordena, aplica filtros y visualiza ubicaciones en el mapa. Interfaz rápida y responsive."
+    />
+    <meta
+      name="keywords"
+      content="vehículos, consumo, filtro, mapa, catálogo, automóviles, mpg"
+    />
+    <meta name="robots" content="index,follow" />
+    <!-- TODO: replace example.com el dominio real -->
+    <link rel="canonical" href="https://example.com/" />
+    <meta name="theme-color" content="#1c1c1c" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Driv.in — Catálogo interactivo de vehículos"
+    />
+    <meta
+      property="og:description"
+      content="Explora y filtra un catálogo interactivo de vehículos. Ordena, aplica filtros y visualiza ubicaciones en el mapa."
+    />
+    <meta property="og:image" content="https://example.com/car.svg" />
+    <meta property="og:url" content="https://example.com/" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Driv.in — Catálogo interactivo de vehículos"
+    />
+    <meta
+      name="twitter:description"
+      content="Explora y filtra un catálogo interactivo de vehículos. Ordena, aplica filtros y visualiza ubicaciones en el mapa."
+    />
+    <meta name="twitter:image" content="https://example.com/car.svg" />
+
+    <!-- Structured data (JSON-LD) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Driv.in",
+        "url": "https://example.com/",
+        "description": "Catálogo interactivo de vehículos: filtra, ordena y visualiza en mapa."
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

@@ -1,0 +1,137 @@
+.layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(
+    135deg,
+    var(--secondary-color) 0%,
+    var(--bg-gray) 100%
+  );
+}
+
+.layout__header {
+  background: rgba(28, 28, 28, 0.98);
+  border-bottom: 1px solid var(--primary-color);
+  padding: 0.6rem 0;
+  backdrop-filter: none;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12);
+}
+
+.layout__header-content {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 1rem;
+  width: 100%;
+  max-width: none;
+  margin: 0;
+}
+
+.layout__logo {
+  color: var(--text-light);
+  font-family: var(--font-accent);
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-transform: none;
+  letter-spacing: 0.03em;
+  text-shadow: none;
+  text-align: left;
+  line-height: 1.2;
+  padding: 0.3rem;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+.layout__logo[href],
+.layout__logo:link,
+.layout__logo:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+.layout__footer-content {
+  text-align: center;
+  color: var(--text-light);
+  font-family: var(--font-main);
+  font-size: 0.85rem;
+  padding: 0 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+  .layout__header {
+    padding: 1rem 0;
+  }
+
+  .layout__header-content {
+    padding: 0 2rem;
+    justify-content: flex-start;
+  }
+
+  .layout__logo {
+    font-size: 1.25rem;
+    letter-spacing: 0.04em;
+    text-align: left;
+  }
+
+  .layout__main {
+    padding: 1.5rem;
+  }
+
+  .layout__footer {
+    padding: 1.5rem 0;
+  }
+
+  .layout__footer-content {
+    font-size: 0.9rem;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .layout__header {
+    padding: 1.2rem 0;
+  }
+
+  .layout__header-content {
+    padding: 0 3rem;
+  }
+
+  .layout__logo {
+    font-size: 1.4rem;
+    letter-spacing: 0.05em;
+    transition: color 0.2s ease;
+  }
+
+  .layout__logo:hover {
+    color: var(--accent-color);
+  }
+
+  .layout__main {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .layout__footer-content {
+    font-size: 0.95rem;
+  }
+}
+
+/* Pantallas muy grandes */
+@media (min-width: 1440px) {
+  .layout__logo {
+    font-size: 1.6rem;
+  }
+
+  .layout__main {
+    max-width: 1400px;
+  }
+}
