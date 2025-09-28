@@ -26,10 +26,17 @@ interface VehicleTableProps {
 const VehicleTable: React.FC<VehicleTableProps> = ({ vehicles }) => {
   const navigate = useNavigate();
   const { sortedData, requestSort, sortConfig } = useSorting(vehicles);
-  const [mobileSortKey, setMobileSortKey] = useState<keyof Vehicle | "">("");
+  const [mobileSortKey, setMobileSortKey] = useState<keyof Vehicle | "">(
+    (sortConfig && sortConfig.key) || ""
+  );
   const [mobileSortDirection, setMobileSortDirection] = useState<
     "asc" | "desc"
-  >("asc");
+  >(sortConfig?.direction ?? "asc");
+
+  React.useEffect(() => {
+    setMobileSortKey(sortConfig?.key ?? "");
+    setMobileSortDirection(sortConfig?.direction ?? "asc");
+  }, [sortConfig]);
 
   if (sortedData.length === 0) {
     return (
